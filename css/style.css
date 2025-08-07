@@ -150,8 +150,15 @@ header {
     background: none;
     border: none;
     cursor: pointer;
-    width: 3vh;
-    height: 3vh;
+    width: 5vh;
+    height: 5vh;
+    padding: 1vh;
+    border-radius: 50%;
+    transition: background-color .2s;
+}
+
+.h-mode-color button:hover {
+    background-color: var(--background-sections);
 }
 
 .h-mode-color button img {
@@ -462,6 +469,10 @@ body[data-mode="light"] .h-input-search p {
 
 body[data-mode="light"] .h-input-search p em {
     background-color: var(--background-others-light);
+}
+
+body[data-mode="light"] .h-mode-color button:hover {
+    background-color: var(--background-sections-light);
 }
 
 body[data-mode="light"] aside,
